@@ -15,6 +15,8 @@ export default {
         lg:"988px",
         xl:"1078px",
         xxl:"1265px",
+        xxxl:"1365px",
+        vxl:"1536px",
     
       },
       colors: {

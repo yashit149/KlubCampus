@@ -8,46 +8,46 @@ const  PopularTags=() =>{
             {/* Events */}
              <div className="">
                  <div className="flex items-center justify-between">
-                        <span className="text-Muted_text font-semibold text-sm">
-                        Technology · Trending
-                        </span>
+                        <div>
+                            <h2 className="text-textGrayLight font-bold">#OpenAI</h2>
+                          <span>20K posts</span>
+                        </div>
                         <span className="">↗</span>
                     </div>
-                    <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                    <span>20K posts</span>
+                    
              </div>
              {/* ////////////////////////////////////////////////// */}
              <div className="">
                  <div className="flex items-center justify-between">
-                        <span className="text-Muted_text font-semibold text-sm">
-                        Technology · Trending
-                        </span>
+                        <div>
+                            <h2 className="text-textGrayLight font-bold">#Events</h2>
+                    <span>18K posts</span>
+                        </div>
                         <span className="">↗</span>
                     </div>
-                    <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                    <span>20K posts</span>
+                    
              </div>
              {/* ///////////////////////////////////////////////////////////// */}
              <div className="">
                  <div className="flex items-center justify-between">
-                        <span className="text-Muted_text font-semibold text-sm">
-                        Technology · Trending
-                        </span>
+                        <div>
+                            <h2 className="text-textGrayLight font-bold">#Hackathon</h2>
+                    <span>10K posts</span>
+                        </div>
                         <span className="">↗</span>
                     </div>
-                    <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                    <span>20K posts</span>
+                    
              </div>
              {/* ///////////////////////////////////////////////////////////////////// */}
              <div className="">
                  <div className="flex items-center justify-between">
-                        <span className="text-Muted_text font-semibold text-sm">
-                        Technology · Trending
-                        </span>
-                        <span className="">↗</span>
+                        <div>
+                            <h2 className="text-textGrayLight font-bold">#Party</h2>
+                            <span>6K posts</span>
+                        </div>
+                    <span className="">↗</span>
                     </div>
-                    <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                    <span>20K posts</span>
+                    
              </div>
 
              <Link href="" className="text-Blue text-sm justify-center">Show more</Link>

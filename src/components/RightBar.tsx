@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const RightBar = () => {
   return (
-    <div className="pt-3 flex flex-col gap-4 sticky top-0 h-max">
+    <div className="pt-3 flex flex-col gap-4 sticky top-0 h-max ">
       <PopularTags />
       <Recommendation />
       <div className="text-sm text-Muted_text flex flex-wrap gap-2">

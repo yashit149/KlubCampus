@@ -56,37 +56,9 @@ const menuList=[
 
 const LeftBar =() =>{
     return(
-        <div className="h-screen sticky top-0 flex flex-col justify-between pt-2 pb-8">
-            {/* LOGO MENU */}
-            <div className="flex flex-col gap-4 text-lg items-center xxl:items-start">
-                {/* LOGO */}
-                <Link href="/" className=' hover:bg-[#181818] overflow-hidden rounded-full'>
-               <Image src="/general/KlubCampusIcon (1).png" alt="Logo" width={64} height={64} className="" />
-                </Link>
-
-                <div className="flex flex-col gap-2">
-                    {menuList.map(item=>(
-                        <Link href={item.link} className='p-2 rounded-full  hover:bg-[#181818] flex items-center gap-4' key={item.id}>
-                            <Image src={`icons/${item.icon}`} alt={item.name} width={24} height={24} />
-                            <span className="hidden xxl:inline">{item.name}</span>
-                        </Link> 
-                        
-
-                    ))}
-                        <Link href="/" className='bg-Accent_col rounded-full w-12 h-12 flex item-center justify-center xxl:hidden'>
-                        <Image src="icons/post.svg" alt='new post' width={24} height={24}/>
-                        </Link>
-                        <Link href="/" className='hidden xxl:block bg-Accent_col rounded-full py-2 px-20 font-bold'>
-                        Post
-                        </Link>
-
-                    
-                </div>
-               
-            </div>
-
+        <div className="h-screen sticky top-0 flex flex-col pt-2 pb-8">
             {/* User */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-4">
                 
                 <div className='flex items-center gap-2'>
                     {/* user display */}
@@ -105,6 +77,32 @@ const LeftBar =() =>{
                 </div>
                 
             </div>
+            {/* LOGO MENU */}
+            <div className="flex flex-col gap-4 text-lg items-center xxl:items-start mt-10">
+                
+
+                <div className="flex flex-col gap-2">
+                    {menuList.map(item=>(
+                        <Link href={item.link} className='p-2 rounded-full  hover:bg-[#181818] flex items-center gap-4' key={item.id}>
+                            <Image src={`icons/${item.icon}`} alt={item.name} width={24} height={24} />
+                            <span className="hidden xxl:inline">{item.name}</span>
+                        </Link> 
+                        
+
+                    ))}
+                        <Link href="/" className='bg-Accent_col rounded-full w-12 h-12 flex item-center justify-center xxl:hidden'>
+                        <Image src="icons/post.svg" alt='new post' width={24} height={24}/>
+                        </Link>
+                        <Link href="/" className='hidden xxl:block bg-Accent_col rounded-full font-bold text-center px-4 py-5 w-1/3'>
+                        Post
+                        </Link>
+
+                    
+                </div>
+               
+            </div>
+
+            
         </div>
     )
 }
