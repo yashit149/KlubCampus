@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Feed from "@/components/Feed"
 const UserPage= () => {
   return(
     <div className="">
@@ -42,11 +43,95 @@ const UserPage= () => {
                 <button className="py-2 px-4 bg-Accent_col font-bold rounded-full ">Support</button>
             </div>
             <div className="p-4 flex flex-col gap-2">
-                <div>
-                    
+                <div className="">
+                    <h1 className="text-2xl font-bold">User Name</h1>
+                    <span className="text-Muted_text text-sm">@user_Id</span>
                 </div>
+                 <p>Use X Youtube Channel</p>
+                        {/* JOB & LOCATION & DATE */}
+                    <div className="flex flex-col gap-4 text-textGray text-[15px]">
+                        <div className="flex gap-4">
+                            <div className="flex items-center gap-2">
+                                <Image
+                                
+                                src="/icons/userLocation.svg"
+                                alt="location"
+                                width={20}
+                                height={20}
+                                />
+                                <span>India</span>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <Image
+                                
+                                src="/icons/date.svg"
+                                alt="date"
+                                width={20}
+                                height={20}
+                                />
+                                <span>Joined August 2025</span>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex items-center gap-2">
+                                <span className="font-bold">100</span>
+                                <span className="text-textGray text-[15px]">Followers</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="font-bold">100</span>
+                                <span className="text-textGray text-[15px]">Followings</span>
+                            </div>
+                            </div>
+
+                    </div>
+
             </div>
         </div>
+        <div className=" flex flex-col items-start justify-start gap-4 p-4">
+            
+                
+                <div className="flex flex-col gap-4 ">
+                    <h1 className="text-lg font-bold ">● Skils & Hobbies</h1>
+                    <div className="flex flex-col justify-start gap-2 p-4  bg-Dark_dull rounded-2xl h-22 ">
+                    
+                    <p>Java,python,Cpp,
+                    Painting,
+                    Singing,
+                    Editing</p>
+                    <Link href="" className="text-Blue text-sm justify-center">See more</Link>
+                  
+                    </div>
+                  
+                </div>
+
+                <div className="flex flex-col gap-4 ">
+                     <h1  className="text-lg font-bold">● Achievements</h1>
+                    <div className="flex flex-col justify-start gap-2 p-4  bg-Dark_dull rounded-2xl h-22 ">
+                    
+                   
+                    <p>XYZ Hackathon winner,
+                    Second runner up in PaintLife
+                    Abcd competition winner</p>
+
+                    <Link href="" className="text-Blue text-sm justify-center">See more</Link>
+                  
+                    </div>
+                  
+                </div>
+           
+           
+                
+        </div>
+
+        <div className="">
+            <div className="p-4 ">
+                <span className="font-bold border-b-[4px] border-Accent_col">Posts</span>
+                <Feed/>
+            </div>
+            
+        </div>
+        
 
     </div>
   )
