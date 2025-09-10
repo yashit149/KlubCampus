@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        class="h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 p-4">
+        <div class="h-auto max-w-md my-auto p-8 flex flex-col bg-black/30 backdrop-blur-xl border border-white/20 shadow-2xl rounded-3xl
+        transform hover:scale-105 transition-all duration-500">
+            <div class="flex flex-col items-center gap-4 mb-8">
+                <img src="$.png" class="w-15 h-15">
+                <p class="text-3xl text-white mx-3 font-bold">Create your KlubCampus Account</p>
+            </div>
+            <div class="flex gap-2 mb-4 mx-3">
+                <input type="text" placeholder="First name" 
+                class="w-full p-3 rounded-xl border border-white text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+                <input type="text" placeholder="Last name " 
+                class="w-full p-3 rounded-xl border border-white text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+            </div>
+            <div class="mb-4 mx-3">
+            <input type="text" placeholder="Your email address" 
+            class="w-full  p-3 rounded-xl border border-white text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+            </div>
+            <div class="flex flex-col gap-2 mb-4 mx-3">
+                <input type="password" placeholder="Password" 
+                class="w-full p-3 rounded-xl border border-white text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+                <input type="text" placeholder="confirm" 
+                class="w-full p-3 rounded-xl border border-white text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+            </div>
+            <p class="mb-8 text-sm text-white mx-3">use 8 or more characters with a mix of letters,numbers & symbols</p>
+            <div class="mx-3">
+                <button class="bg-gradient-to-r from-blue-500 to-purple-600 mb-4 
+                rounded-xl px-4 py-2 w-full hover:shadow-2xl hover:from-bg-blue-700  hover:to-purple-500 transform transition-all duration-300">next</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
