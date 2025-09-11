@@ -17,7 +17,7 @@ const menuList=[
     {
         id:3,
         name:"Clubs & Communities",
-        link:"/",
+        link:"/clubs.html",
         icon:"community.svg",
         
     },
@@ -30,7 +30,7 @@ const menuList=[
     {
         id:5,
         name:"Messeges",
-        link:"/",
+        link:"/chatbox.html",
         icon:"message.svg",
     },
     {
