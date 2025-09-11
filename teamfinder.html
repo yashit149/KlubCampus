@@ -6,156 +6,286 @@
   <title>Teammate Finder</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100 min-h-screen">
-  <div class="header bg-gradient-to-r from-pink-600 to-sky-400 py-8 px-8 rounded-b-md shadow mb-8">
+<body class="bg-black min-h-screen"> 
+  <div class="header  py-8 px-8 rounded-b-md shadow mb-8">
     <div class="flex flex-col items-center">
       <h1 class="text-white text-3xl font-bold">Teammate Finder</h1>
     <form class="mt-4 flex flex-wrap items-center gap-2">
-      <input type="search" placeholder="Search by name, skill, or interest" class="px-4 py-2 bg-white rounded border border-gray-200 shadow  w-80 " />
-      <button class="px-4 py-2 rounded bg-white text-pink-700 font-medium shadow-sm">Skills</button>
-      <button class="px-4 py-2 rounded bg-white text-sky-700 font-medium shadow-sm">Interests</button>
-      <button class="px-4 py-2 rounded bg-white text-gray-700 font-medium shadow-sm">Course</button>
-      <button class="px-4 py-2 rounded bg-white text-emerald-700 font-medium shadow-sm">Availability</button>
+      <input type="search" placeholder="Search by name, skill, or interest" class="px-4 py-2 bg-[##0d0d0d] border-[2px] border-white rounded-full text-white shadow  w-80 placeholder:text-white " />
+      <button class="px-4 py-2 rounded-full bg-[#1a1a1a] border-[3px] border-[#ff5400] text-pink-300 font-medium shadow-sm">Skills</button>
+      <button class="px-4 py-2 rounded-full bg-[#1a1a1a] border-[3px] border-[#ff5400] text-sky-300 font-medium shadow-sm">Interests</button>
+      <button class="px-4 py-2 rounded-full bg-[#1a1a1a] border-[3px] border-[#ff5400] text-gray-300 font-medium shadow-sm">Course</button>
+      <button class="px-4 py-2 rounded-full bg-[#1a1a1a] border-[3px] border-[#ff5400] text-emerald-300 font-medium shadow-sm">Availability</button>
     </form>
 
     </div>
-    
+      <h1 class="text-2xl text-white font-bold ml-10 mt-10">● Suggested for You</h1>
+  </div>
+  <div>
+
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 mb-14">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 mb-14">
     <!-- Student Card -->
-    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
       <div class="relative mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-pink-400 shadow" />
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
         <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div class="font-bold text-lg text-slate-900 mb-1">Student/User</div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
       <div class="flex flex-wrap gap-1 mb-1">
-        <span class="bg-blue-100 text-blue-800 px-2 rounded-full text-xs">Looking for: Hackathon</span>
-        <span class="bg-gray-100 text-gray-600 px-2 rounded-full text-xs">Flutter</span>
-        <span class="bg-purple-100 text-purple-700 px-2 rounded-full text-xs">Machine Learning</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
       </div>
       <div class="text-gray-500 text-xs text-center mb-2">
         Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
         Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
         <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
       </div>
-      <button class="bg-gradient-to-r from-pink-500 to-sky-500 text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
         Quick Connect
       </button>
       <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
     </div>
-    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
       <div class="relative mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-pink-400 shadow" />
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
         <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div class="font-bold text-lg text-slate-900 mb-1">Student/User</div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
       <div class="flex flex-wrap gap-1 mb-1">
-        <span class="bg-blue-100 text-blue-800 px-2 rounded-full text-xs">Looking for: Hackathon</span>
-        <span class="bg-gray-100 text-gray-600 px-2 rounded-full text-xs">Flutter</span>
-        <span class="bg-purple-100 text-purple-700 px-2 rounded-full text-xs">Machine Learning</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
       </div>
       <div class="text-gray-500 text-xs text-center mb-2">
         Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
         Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
         <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
       </div>
-      <button class="bg-gradient-to-r from-pink-500 to-sky-500 text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
         Quick Connect
       </button>
       <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
     </div>
-    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
       <div class="relative mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-pink-400 shadow" />
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
         <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div class="font-bold text-lg text-slate-900 mb-1">Student/User</div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
       <div class="flex flex-wrap gap-1 mb-1">
-        <span class="bg-blue-100 text-blue-800 px-2 rounded-full text-xs">Looking for: Hackathon</span>
-        <span class="bg-gray-100 text-gray-600 px-2 rounded-full text-xs">Flutter</span>
-        <span class="bg-purple-100 text-purple-700 px-2 rounded-full text-xs">Machine Learning</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
       </div>
       <div class="text-gray-500 text-xs text-center mb-2">
         Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
         Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
         <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
       </div>
-      <button class="bg-gradient-to-r from-pink-500 to-sky-500 text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
         Quick Connect
       </button>
       <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
     </div>
-    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
       <div class="relative mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-pink-400 shadow" />
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
         <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div class="font-bold text-lg text-slate-900 mb-1">Student/User</div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
       <div class="flex flex-wrap gap-1 mb-1">
-        <span class="bg-blue-100 text-blue-800 px-2 rounded-full text-xs">Looking for: Hackathon</span>
-        <span class="bg-gray-100 text-gray-600 px-2 rounded-full text-xs">Flutter</span>
-        <span class="bg-purple-100 text-purple-700 px-2 rounded-full text-xs">Machine Learning</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
       </div>
       <div class="text-gray-500 text-xs text-center mb-2">
         Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
         Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
         <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
       </div>
-      <button class="bg-gradient-to-r from-pink-500 to-sky-500 text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
         Quick Connect
       </button>
       <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
     </div>
-    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
       <div class="relative mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-pink-400 shadow" />
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
         <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div class="font-bold text-lg text-slate-900 mb-1">Student/User</div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
       <div class="flex flex-wrap gap-1 mb-1">
-        <span class="bg-blue-100 text-blue-800 px-2 rounded-full text-xs">Looking for: Hackathon</span>
-        <span class="bg-gray-100 text-gray-600 px-2 rounded-full text-xs">Flutter</span>
-        <span class="bg-purple-100 text-purple-700 px-2 rounded-full text-xs">Machine Learning</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
       </div>
       <div class="text-gray-500 text-xs text-center mb-2">
         Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
         Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
         <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
       </div>
-      <button class="bg-gradient-to-r from-pink-500 to-sky-500 text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
         Quick Connect
       </button>
       <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
     </div>
-    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
       <div class="relative mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-pink-400 shadow" />
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
         <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div class="font-bold text-lg text-slate-900 mb-1">Student/User</div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
       <div class="flex flex-wrap gap-1 mb-1">
-        <span class="bg-blue-100 text-blue-800 px-2 rounded-full text-xs">Looking for: Hackathon</span>
-        <span class="bg-gray-100 text-gray-600 px-2 rounded-full text-xs">Flutter</span>
-        <span class="bg-purple-100 text-purple-700 px-2 rounded-full text-xs">Machine Learning</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
       </div>
       <div class="text-gray-500 text-xs text-center mb-2">
         Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
         Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
         <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
       </div>
-      <button class="bg-gradient-to-r from-pink-500 to-sky-500 text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
         Quick Connect
       </button>
       <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
     </div>
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+      <div class="relative mb-2">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
+        <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
+      </div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
+      <div class="flex flex-wrap gap-1 mb-1">
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
+      </div>
+      <div class="text-gray-500 text-xs text-center mb-2">
+        Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
+        Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
+        <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
+      </div>
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+        Quick Connect
+      </button>
+      <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
+    </div>
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+      <div class="relative mb-2">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
+        <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
+      </div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
+      <div class="flex flex-wrap gap-1 mb-1">
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
+      </div>
+      <div class="text-gray-500 text-xs text-center mb-2">
+        Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
+        Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
+        <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
+      </div>
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+        Quick Connect
+      </button>
+      <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
+    </div>
+
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+      <div class="relative mb-2">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
+        <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
+      </div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
+      <div class="flex flex-wrap gap-1 mb-1">
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
+      </div>
+      <div class="text-gray-500 text-xs text-center mb-2">
+        Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
+        Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
+        <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
+      </div>
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+        Quick Connect
+      </button>
+      <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
+    </div>
+
+
+
+
+
+    <div class="bg-[#0d0d0d] rounded-3xl shadow p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition">
+      <div class="relative mb-2">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full border-4 border-[#ef233c] shadow" />
+        <span class="absolute top-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
+      </div>
+      <div class="font-bold text-lg text-white mb-1">Student/User</div>
+      <div class="flex flex-wrap gap-1 mb-1">
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Looking for: Hackathon</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Flutter</span>
+        <span class="bg-[#1a1a1a] text-white px-2 rounded-full text-xs">Machine Learning</span>
+      </div>
+      <div class="text-gray-500 text-xs text-center mb-2">
+        Past: CodeJam Winner, Chess Club, UI Hackfest<br/>
+        Clubs: <span class="inline-block w-6"><img src="logo1.png" alt="club" /></span>
+        <span class="inline-block w-6"><img src="logo2.png" alt="club" /></span>
+      </div>
+      <button class="bg-[#ff5400] text-white px-6 py-2 rounded-full font-semibold mt-2 shadow hover:scale-105 transition">
+        Quick Connect
+      </button>
+      <button class="mt-2 text-sky-500 underline text-xs">Create/Join Team Post</button>
+    </div>
+
+
+
+
+
+
+
+    
+    
     <!-- Repeat per student -->
   </div>
 
   <div class="max-w-xl mx-auto">
-    <div class="bg-pink-50 rounded-lg p-4 shadow mt-8">
-      <h3 class="font-semibold mb-2 text-pink-600">AI Suggestions Coming Soon</h3>
+    <div class="bg-[#0d0d0d] rounded-2xl p-4 shadow mt-8 mb-5">
+      <h3 class="font-semibold mb-2 text-pink-500">AI Suggestions Coming Soon</h3>
       <p class="text-gray-400 text-sm">Smarter teammate matching via AI is under development.</p>
     </div>
   </div>
